@@ -102,3 +102,27 @@ a{
 ul[role="list"]{
     list-style: none;
 }
+
+.btn[area-label]{
+
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    background: var(--background-color);
+    inset: 0.09375rem;
+  }
+
+  &::after{
+    content: attr(area-label);
+
+    background-color: var(--btn-backgrand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    z-index: 1;
+  }
+}
