@@ -1,0 +1,60 @@
+@media (min-width:30em){
+    :root{
+        --fs-lg: 2rem;
+        --fs-xl: 3rem;
+        --fs-2xl: 4rem;
+
+        --px-lg: 1.5rem;
+        --max-width: 80rem;
+
+        --py-base: 1.5rem;
+        --py-lg: 2.5rem;
+        --py-xl: 5rem;
+    }
+
+
+    .mob-esconder{
+        display: initial;
+    }
+
+    .even-columns{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
+
+    .btn-sm{
+        padding: 0.75rem 1.5rem;
+        font-size: var(--fs-base);
+    }
+
+    .btn-md{
+        padding: 0.75rem 1.5rem;
+        font-size: 1.125rem;
+    }
+
+    #hero{
+        background: url(assets/bg-hero.svg) no-repeat bottom center/contain;
+        padding-bottom: 15rem;
+        & img[src*="music-ba"]{
+            width: 25.75rem;
+        }
+
+        & h1{
+            margin-top: 1.5rem;
+        }
+
+        & p{
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        & .buttoes{
+            margin-top: 3rem;
+        }
+    }
+
+    #about-cell{
+        display: none;
+    }
+}
