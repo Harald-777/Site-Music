@@ -111,7 +111,7 @@ ul[role="list"]{
     list-style: none;
 }
 
-.btn[area-label]{
+.btn[aria-label]{
 
   position: relative;
 
@@ -124,7 +124,7 @@ ul[role="list"]{
   }
 
   &::after{
-    content: attr(area-label);
+    content: attr(aria-label);
 
     background-color: var(--btn-backgrand);
     -webkit-background-clip: text;
@@ -188,5 +188,27 @@ header{
     & a:first-child{
       margin-right: auto;
     }
+  }
+}
+
+#hero{
+  text-align: center;
+
+  & img[src*="music-ba"]{
+    width: 12.875rem;
+  }
+
+  & h1{
+    margin-top: 1rem;
+  }
+
+  & p{
+    font: var(--fw-md) var(--fs-lg)/1.4 var(--ff-sans);
+    margin-top: .5rem;
+  }
+
+  & .buttoes{
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
