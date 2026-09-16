@@ -25,11 +25,18 @@
 .container{
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
     margin-inline: auto;
-    border: solid red;
 }
 
 .mob-esconder{
     display: none;
+}
+
+.itens-center{
+    align-items: center;
+}
+
+.gap-1\.5{
+    gap: 1.5rem;
 }
 
 .btn{
@@ -54,6 +61,10 @@
 .btn:hover{
     --btn-backgrand: linear-gradient(90deg, var(--brand-gradient-start) 0%, var(--brand-gradient-end) 100%);
     --btn-color: var(--surface-color);
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--btn-color);
 }
 
 .btn-sm{
@@ -82,6 +93,7 @@
 .grid{
     display: grid;
 }
+
 @media (min-width:30em)
 {
     .mob-esconder{
@@ -91,6 +103,17 @@
     .even-columns{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    }
+
+
+    .btn-sm{
+        padding: 0.75rem 1.5rem;
+        font-size: var(--fs-base);
+    }
+
+    .btn-md{
+        padding: 0.75rem 1.5rem;
+        font-size: 1.125rem;
     }
 }
 
