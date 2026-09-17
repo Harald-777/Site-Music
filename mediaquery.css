@@ -1,4 +1,4 @@
-@media (min-width:30em){
+@media (min-width:80em){
     :root{
         --fs-lg: 2rem;
         --fs-xl: 3rem;
@@ -130,5 +130,25 @@
         }
 
 
+    }
+
+    #pricing{
+        --fs-pricing: 2.5rem;
+
+        & header{
+            max-width: 50rem;
+            margin-inline: auto;
+        }
+
+        & .premium{
+            .card{
+                padding-bottom: 6rem;
+            }
+        }
+
+        & .card:nth-child(3) .separador{
+            margin-block: 2rem;
+        }
+        
     }
 }
