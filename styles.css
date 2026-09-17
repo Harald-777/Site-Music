@@ -58,6 +58,8 @@ html {
   font-size: var(--fs-base);
   line-height: 1.6;
   color: var(--text-color-primary);
+
+  overflow-x: hidden;
 }
 
 body {
@@ -245,16 +247,15 @@ section{
   }
 }
 
-.cards{
-  & .card{
-    background: var(--surface-color);
-    border-radius: 1.5rem;
+.card{
+  background: var(--surface-color);
+  border-radius: 1.5rem;
 
-    & h3{
-      margin-top: 1rem;
-    }
+  & h3{
+    margin-top: 1rem;
   }
 }
+
 
 #pricing{
   --fs-pricing: 2rem;
@@ -344,4 +345,24 @@ section{
       z-index: -1;
     }
   }
+}
+
+#dawnload{
+  & .card{
+    padding: 3rem 1.5rem 15rem;
+    position: relative;
+
+    & > img{
+      width: 14.5rem;
+      position: absolute;
+      bottom: 0;
+      right: -3.5rem;
+    }
+
+    .buttoes{
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+  }
+
 }
