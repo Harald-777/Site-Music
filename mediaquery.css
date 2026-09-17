@@ -165,4 +165,23 @@
             }
         }
     }
+
+    footer{
+        & .container{
+            padding-inline: 0;
+            padding-bottom: 2rem;
+        }
+
+        & .top{
+            grid-template-columns: auto 1fr;
+
+            & nav{
+                margin-left: auto;
+
+                & ul{
+                    width: 14rem;
+                }
+            }
+        }
+    }
 }
